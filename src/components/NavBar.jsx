@@ -1,12 +1,16 @@
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import { useState } from "react";
 
 export function NavBar() {
+  const [nav, setNav] = useState(false);
+  const handleClick = () => setNav(!nav);
+
   const navItems = [
-    { name: "Home", link: "#" },
-    { name: "About", link: "#" },
-    { name: "Support", link: "#" },
-    { name: "Plataforms", link: "#" },
-    { name: "Pricing", link: "#" },
+    { name: "Home", link: "#", id: 1 },
+    { name: "About", link: "#", id: 2 },
+    { name: "Support", link: "#", id: 3 },
+    { name: "Plataforms", link: "#", id: 4 },
+    { name: "Pricing", link: "#", id: 5 },
   ];
 
   return (
@@ -16,7 +20,7 @@ export function NavBar() {
           <h1 className="text-3xl font-bold mr-4 sm:text-4xl">BRAND.</h1>
           <ul className="hidden md:flex">
             {navItems.map((link) => (
-              <li className="p-4">
+              <li className="p-4" key={link.id}>
                 <a href={link.link}>{link.name}</a>
               </li>
             ))}
@@ -28,14 +32,14 @@ export function NavBar() {
           </button>
           <button className="px-4 py-3">Sign Up</button>
         </div>
-        <div className="md:hidden">
-          <MenuIcon className="w-8" />
+        <div className="md:hidden" onClick={handleClick}>
+          {!nav ? <MenuIcon className="w-8" /> : <XIcon className="w-8" />}
         </div>
       </div>
 
-      <ul className="absolute bg-zinc-200 w-full px-8">
+      <ul className={!nav ? "hidden" : "absolute bg-zinc-200 w-full px-8"}>
         {navItems.map((link) => (
-          <li className="p-4 border-b-2 border-zinc-300 w-full">
+          <li className="p-4 border-b-2 border-zinc-300 w-full" key={link.id}>
             <a href={link.link}>{link.name}</a>
           </li>
         ))}
