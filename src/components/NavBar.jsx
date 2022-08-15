@@ -32,7 +32,7 @@ export function NavBar() {
           </button>
           <button className="px-4 py-3">Sign Up</button>
         </div>
-        <div className="md:hidden mr-2" onClick={handleClick}>
+        <div className="md:hidden mr-4" onClick={handleClick}>
           {!nav ? <MenuIcon className="w-8" /> : <XIcon className="w-8" />}
         </div>
       </div>
