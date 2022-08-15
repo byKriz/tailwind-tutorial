@@ -37,7 +37,7 @@ export function NavBar() {
         </div>
       </div>
 
-      <ul className={!nav ? "hidden" : "absolute bg-zinc-200 w-full px-8"}>
+      <ul className={!nav ? "hidden" : "absolute bg-zinc-200 w-full px-8 md:hidden"}>
         {navItems.map((link) => (
           <li className="p-4 border-b-2 border-zinc-300 w-full" key={link.id}>
             <a href={link.link}>{link.name}</a>
