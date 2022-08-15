@@ -1,6 +1,4 @@
 import React from "react";
-import { PhoneIcon, ArrowSmRightIcon } from "@heroicons/react/outline";
-import { ChipIcon, SupportIcon } from "@heroicons/react/solid";
 import supportImg from "../assets/support.jpg";
 import { SuppBox } from "./SuppBox";
 
@@ -34,7 +32,24 @@ export const Support = () => {
         {/* aqui comienza el componente suppBox */}
         <div className="grid grid-cols-1 lg:grid-cols-3 relative gap-x-8 gap-y-16 px-4 pt-12 sm:pt-20 text-black">
           <SuppBox
+            name="Sales"
             iconName="phone"
+            text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse sint
+          rerum, incidunt velit voluptatibus aliquam, voluptatum a provident
+          ipsam accusamus odio numquam impedit nisi ipsa culpa iste nobis,
+          perspiciatis cupiditate."
+          />
+          <SuppBox
+            name="Technical Support"
+            iconName="support"
+            text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse sint
+          rerum, incidunt velit voluptatibus aliquam, voluptatum a provident
+          ipsam accusamus odio numquam impedit nisi ipsa culpa iste nobis,
+          perspiciatis cupiditate."
+          />
+          <SuppBox
+            name="Media Inquiries"
+            iconName="chip"
             text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse sint
           rerum, incidunt velit voluptatibus aliquam, voluptatum a provident
           ipsam accusamus odio numquam impedit nisi ipsa culpa iste nobis,
