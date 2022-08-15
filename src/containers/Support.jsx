@@ -1,6 +1,6 @@
 import React from "react";
 import supportImg from "../assets/support.jpg";
-import { SuppBox } from "./SuppBox";
+import { SuppBox } from "../components/SuppBox";
 
 export const Support = () => {
   return (
