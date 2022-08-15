@@ -8,7 +8,7 @@ export function NavBar() {
   const navItems = [
     { name: "Home", link: "#home", id: 1 },
     { name: "About", link: "#about", id: 2 },
-    { name: "Support", link: "#", id: 3 },
+    { name: "Support", link: "#support", id: 3 },
     { name: "Plataforms", link: "#", id: 4 },
     { name: "Pricing", link: "#", id: 5 },
   ];

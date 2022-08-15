@@ -15,7 +15,10 @@ export const Support = () => {
 
       <div className="max-w-[1240px] mx-auto text-white relative">
         <div className=" px-4 py-12">
-          <h2 className="text-3xl pt-8 text-slate-300 uppercase text-center">
+          <h2
+            className="text-3xl pt-8 text-slate-300 uppercase text-center"
+            id="support"
+          >
             Support
           </h2>
           <h3 className="text-5xl font-bold py-6 text-center">
