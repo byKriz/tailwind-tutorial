@@ -6,7 +6,7 @@ export const AllInOne = () => {
     "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati iure fuga praesentium autem ipsum sed aliquam magni cum minus eum illo iste facilis dolorem, explicabo repellat inventore accusantium molestias officia?";
 
   return (
-    <div className="w-full my-32">
+    <div name="plataforms" className="w-full my-32">
       <div className="max-w-[1240px] mx-auto px-2">
         <h2 className="text-5xl font-bold text-center">All-In-One Plataform</h2>
         <p className="text-2xl py-8 text-gray-500 text-center">
