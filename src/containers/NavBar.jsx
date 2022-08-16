@@ -1,16 +1,52 @@
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { useState } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export function NavBar() {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
 
   const navItems = [
-    { name: "Home", link: "#home", id: 1 },
-    { name: "About", link: "#about", id: 2 },
-    { name: "Support", link: "#support", id: 3 },
-    { name: "Plataforms", link: "#", id: 4 },
-    { name: "Pricing", link: "#", id: 5 },
+    {
+      name: "Home",
+      link: (
+        <Link to="home" smooth={true} duration={500}>
+          Home
+        </Link>
+      ),
+    },
+    {
+      name: "About",
+      link: (
+        <Link to="about" smooth={true} offset={-140} duration={500}>
+          About
+        </Link>
+      ),
+    },
+    {
+      name: "Support",
+      link: (
+        <Link to="support" smooth={true} offset={-100} duration={500}>
+          Support
+        </Link>
+      ),
+    },
+    {
+      name: "Plataforms",
+      link: (
+        <Link to="plataforms" smooth={true} offset={-100} duration={500}>
+          Plataforms
+        </Link>
+      ),
+    },
+    {
+      name: "Pricing",
+      link: (
+        <Link to="pricing" smooth={true} offset={-50} duration={500}>
+          Pricing
+        </Link>
+      ),
+    },
   ];
 
   return (
@@ -20,8 +56,8 @@ export function NavBar() {
           <h1 className="text-3xl font-bold mr-4 sm:text-4xl">BRAND.</h1>
           <ul className="hidden md:flex">
             {navItems.map((link) => (
-              <li className="p-4" key={link.id}>
-                <a href={link.link}>{link.name}</a>
+              <li className="p-4" key={link.name}>
+                {link.link}
               </li>
             ))}
           </ul>
@@ -39,8 +75,8 @@ export function NavBar() {
 
       <ul className={!nav ? "hidden" : "absolute bg-zinc-200 w-full px-8 md:hidden"}>
         {navItems.map((link) => (
-          <li className="p-4 border-b-2 border-zinc-300 w-full" key={link.id}>
-            <a href={link.link}>{link.name}</a>
+          <li className="p-4 border-b-2 border-zinc-300 w-full" key={link.name}>
+            {link.link}
           </li>
         ))}
 
