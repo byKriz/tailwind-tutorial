@@ -5,12 +5,13 @@ import { Link, animateScroll as scroll } from "react-scroll";
 export function NavBar() {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
+  const handleClose = () => setNav(false);
 
   const navItems = [
     {
       name: "Home",
       link: (
-        <Link to="home" smooth={true} duration={500}>
+        <Link to="home" smooth={true} duration={500} onClick={handleClose}>
           Home
         </Link>
       ),
@@ -18,7 +19,7 @@ export function NavBar() {
     {
       name: "About",
       link: (
-        <Link to="about" smooth={true} offset={-140} duration={500}>
+        <Link to="about" smooth={true} offset={-140} duration={500} onClick={handleClose}>
           About
         </Link>
       ),
@@ -26,7 +27,7 @@ export function NavBar() {
     {
       name: "Support",
       link: (
-        <Link to="support" smooth={true} offset={-100} duration={500}>
+        <Link to="support" smooth={true} offset={-100} duration={500} onClick={handleClose}>
           Support
         </Link>
       ),
@@ -34,7 +35,7 @@ export function NavBar() {
     {
       name: "Plataforms",
       link: (
-        <Link to="plataforms" smooth={true} offset={-100} duration={500}>
+        <Link to="plataforms" smooth={true} offset={-100} duration={500} onClick={handleClose}>
           Plataforms
         </Link>
       ),
@@ -42,7 +43,7 @@ export function NavBar() {
     {
       name: "Pricing",
       link: (
-        <Link to="pricing" smooth={true} offset={-50} duration={500}>
+        <Link to="pricing" smooth={true} offset={-50} duration={500} onClick={handleClose}>
           Pricing
         </Link>
       ),
