@@ -1,8 +1,10 @@
 import React from "react";
-import {CheckIcon} from "@heroicons/react/outline"
 import { AioBox } from "../components/AioBox";
 
 export const AllInOne = () => {
+  const loremText =
+    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati iure fuga praesentium autem ipsum sed aliquam magni cum minus eum illo iste facilis dolorem, explicabo repellat inventore accusantium molestias officia?";
+
   return (
     <div className="w-full my-32">
       <div className="max-w-[1240px] mx-auto px-2">
@@ -13,23 +15,15 @@ export const AllInOne = () => {
           nisi?
         </p>
 
-
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
-
-          {/* <div>
-            <div>
-              <CheckIcon />
-            </div>
-          </div> */}
-          <AioBox />
-          <AioBox />
-          <AioBox />
-          <AioBox />
-          <AioBox />
-          <AioBox />
-          <AioBox />
-          <AioBox />
-
+          <AioBox name="Notifications" text={loremText} />
+          <AioBox name="Notifications" text={loremText} />
+          <AioBox name="Notifications" text={loremText} />
+          <AioBox name="Notifications" text={loremText} />
+          <AioBox name="Notifications" text={loremText} />
+          <AioBox name="Notifications" text={loremText} />
+          <AioBox name="Notifications" text={loremText} />
+          <AioBox name="Notifications" text={loremText} />
         </div>
       </div>
     </div>
