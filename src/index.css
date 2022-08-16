@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 /* como poner clases globales en una etiqueta */
-/* @layer base {
+@layer base {
     li {
         @apply p-4
     }
-} */
+}
 
 @layer base {
     button {
