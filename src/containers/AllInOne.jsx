@@ -9,7 +9,7 @@ export const AllInOne = () => {
     <div name="plataforms" className="w-full my-32">
       <div className="max-w-[1240px] mx-auto px-2">
         <h2 className="text-5xl font-bold text-center">All-In-One Plataform</h2>
-        <p className="text-2xl py-8 text-gray-500 text-center">
+        <p className="text-2xl px-1 py-8 text-gray-500 text-center md:px-0">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tenetur
           totam minus ratione deserunt, aperiam saepe similique atque ullam
           nisi?

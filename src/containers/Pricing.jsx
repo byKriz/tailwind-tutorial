@@ -12,7 +12,7 @@ export const Pricing = () => {
           <h3 className="text-5xl font-bold text-white py-8">
             The right price for research.
           </h3>
-          <p className="text-3xl">
+          <p className="text-3xl px-2 md:px-0">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim eius
             possimus maxime, non nam ea eveniet earum amet sed nesciunt
             molestias sapiente similique tempore alias velit ratione, quis

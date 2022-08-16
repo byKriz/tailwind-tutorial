@@ -4,7 +4,7 @@ export const About = () => {
   return (
     <div name="about" className="w-full my-32" id="about">
       <div className=" max-w-[1240px] mx-auto">
-        <div className="text-center">
+        <div className="text-center px-2">
           <h2 className="text-5xl font-bold">
             Trusted by developers across the world
           </h2>
